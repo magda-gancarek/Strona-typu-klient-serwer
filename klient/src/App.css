@@ -1,0 +1,481 @@
+.App {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.post {
+  width: 500px;
+  height: 600px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  border: 1px solid lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+  background: 'linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)',
+
+}
+
+.post:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  cursor: pointer;
+}
+.title {
+  flex: 20%;
+  clear: both;
+  place-content: center;
+  color: rgb(55, 48, 48);
+}
+
+.polubienia {
+  flex: 70%;
+  width: 500px;
+  align-items: right;
+  
+  color: rgb(23, 26, 23);
+}
+
+
+.post .body {
+  flex: 60%;
+  display: grid;
+  place-content: center;
+}
+
+.post .footer {
+  flex: 100%;
+  border-top: 1px solid lightgray;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 15px;
+  background-color: white;
+  color: black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.gora{
+  display: flex;
+  justify-content: flex-start;
+  text-decoration: none;
+  margin: 10px 20px 10px 20px;
+}
+
+.gora a {
+  margin-left: 15px;
+  text-decoration: none;
+  position: relative;
+  top: 15px;
+  color: black;
+}
+
+.gora a:hover {
+  color: gray;
+}
+
+.footer .buttons {
+  flex: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.buttons label {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.unlikebutton{
+  position:relative;
+  color: gray;
+}
+.likebutton1{
+  color: red;
+}
+
+/* POST */
+
+.createPostPage {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 500px;
+  height: auto;
+  padding: 20px;
+  border: 5px solid rgb(242, 242, 242);
+  border-radius: 5px;
+}
+
+.formContainer #inputCreatePost {
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.formContainer button {
+  margin-top: 15px;
+  height: 40px;
+  border: none;
+  background: rgb(152,104,185);
+background: linear-gradient(90deg, rgba(152,104,185,1) 0%, rgba(255,91,91,1) 50%, rgba(255,172,135,1) 75%, rgba(252,176,69,1) 100%);
+  border-radius: 5px;
+  color: white;
+}
+
+.formContainer button:hover {
+  cursor: pointer;
+  background: rgb(118,25,180);
+  background: linear-gradient(90deg, rgba(118,25,180,1) 5%, rgba(255,0,0,1) 50%, rgba(255,111,47,1) 75%, rgba(252,176,69,1) 100%);
+}
+
+span {
+  color: red;
+}
+
+/* NAWIGACJA */
+
+.navbar {
+  width: 100%;
+  height: 70px;
+  background: rgb(154,11,221);
+  background: rgb(154,11,221);
+  background: linear-gradient(90deg, rgba(154,11,221,1) 0%, rgba(207,64,161,1) 30%, rgba(228,175,56,1) 63%, rgba(255,81,5,1) 100%);  display: flex;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar .links {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .loggedInContainer {
+  flex: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+}
+.navbar a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.navbar button {
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+  margin-right: 10px;
+  background-color: white;
+}
+
+.navbar button:hover {
+  cursor: pointer;
+  background-color: rgb(127, 9, 156);
+}
+
+.navbar h1 {
+  text-align: right;
+  margin-right: 10px;
+  color: white;
+  font-weight: lighter;
+}
+
+/* LOGO */
+
+.logo{
+  border-radius: 20px;
+  border: solid 4px white;
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+}
+.logo2{
+  position: absolute;
+  border-radius: 20px;
+  border: solid 4px white;
+  width: 20px;
+  height: 20px;
+  top: 24px;
+  left: 34px;
+  
+}
+.logo3{
+  position: absolute;
+  border-radius: 10px;
+  border: solid 4px white;
+  background-color: white;
+  width: 2px;
+  height: 2px;
+  top: 14px;
+  left: 58px;
+  }
+
+  .logo11{
+    border-radius: 20px;
+    border: solid 4px white;
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+  }
+  .logo22{
+    position: absolute;
+    border-radius: 20px;
+    border: solid 4px white;
+    width: 20px;
+    height: 20px;
+    top: 24px;
+    left: 52px;
+    
+  }
+  .logo33{
+    position: absolute;
+    border-radius: 10px;
+    border: solid 4px white;
+    background-color: white;
+    width: 2px;
+    height: 2px;
+    top: 14px;
+    left: 74px;
+    }  
+
+/* POST */
+
+.postPage {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 90%;
+}
+
+.leftSide {
+  flex: 50%;
+  height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+}
+
+.rightSide {
+  flex: 50%;
+  height: calc(100vh - 70px);
+  display: grid;
+  place-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.rightSide .addCommentContainer {
+  display: flex;
+  place-items: center;
+  border: rgb(205, 205, 205) 1px solid;
+}
+
+.addCommentContainer input,
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+}
+
+.addCommentContainer button {
+  color: rgb(28, 175, 215);
+}
+
+.rightSide .listOfComments {
+  flex: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listOfComments .comment {
+  width: 70%;
+  height: auto;
+  padding: 30px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#individual {
+  height: 600px;
+  width: 500px;
+}
+
+#individual .title,
+#individual .footer {
+  font-size: 30px;
+  margin-left: 10px;
+}
+#nazwa{
+  margin-left: 10px;
+}
+
+#individual .body {
+  font-size: 25px;
+}
+
+/* LOGOWANIE */
+
+.loginContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.loginContainer input,
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  margin: 10px;
+}
+
+.loginContainer button {
+  background: rgb(152,104,185);
+background: linear-gradient(90deg, rgba(152,104,185,1) 0%, rgba(255,91,91,1) 50%, rgba(255,172,135,1) 75%, rgba(252,176,69,1) 100%);
+  color: white;
+}
+
+.loginContainer button:hover {
+  cursor: pointer;
+  background: rgb(118,25,180);
+  background: linear-gradient(90deg, rgba(118,25,180,1) 5%, rgba(255,0,0,1) 50%, rgba(255,111,47,1) 75%, rgba(252,176,69,1) 100%);
+}
+.formContainer button {
+  margin-top: 15px;
+  height: 40px;
+  border: none;
+  background: rgb(152,104,185);
+background: linear-gradient(90deg, rgba(152,104,185,1) 0%, rgba(255,91,91,1) 50%, rgba(255,172,135,1) 75%, rgba(252,176,69,1) 100%);
+  border-radius: 5px;
+  color: white;
+}
+
+.formContainer button:hover {
+  cursor: pointer;
+  background: rgb(118,25,180);
+  background: linear-gradient(90deg, rgba(118,25,180,1) 5%, rgba(255,0,0,1) 50%, rgba(255,111,47,1) 75%, rgba(252,176,69,1) 100%);
+}
+
+
+.loginContainer input {
+  border: 2px solid rgb(171, 161, 171);
+}
+
+.nazwa_uzytkownika{
+  font-weight: 600;
+  font-size: 24px;
+  color: black;
+}
+
+.loginbutton{
+  background: rgb(118,25,180);
+}
+
+.loginbutton button:hover {
+  cursor: pointer;
+  background: rgb(118,25,180);
+  background: linear-gradient(90deg, rgba(118,25,180,1) 5%, rgba(255,0,0,1) 50%, rgba(255,111,47,1) 75%, rgba(252,176,69,1) 100%);
+}
+
+
+.post_profile {
+  width: 250px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+  background: 'linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%)';
+
+
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.listOfPosts{
+  width: 890px;
+   display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.commentbutton{
+  color: green;
+}
+.commentbutton2{
+  color: yellow;
+}
+
+.comment{
+  color: gray;
+}
+
+.changepass {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto;
+  height: auto;
+  padding: 20px;
+  border: 5px solid rgb(242, 242, 242);
+  border-radius: 5px;
+  margin: 50px
+}
+
+
+.changepass input,
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  margin: 10px;
+}
+
+.changepass button{
+  background: rgb(152,104,185);
+background: linear-gradient(90deg, rgba(152,104,185,1) 0%, rgba(255,91,91,1) 50%, rgba(255,172,135,1) 75%, rgba(252,176,69,1) 100%);
+  color: white;
+}
+
+.changepass button:hover{
+  color: white;
+  background: rgb(118,25,180);
+  background: linear-gradient(90deg, rgba(118,25,180,1) 5%, rgba(255,0,0,1) 50%, rgba(255,111,47,1) 75%, rgba(252,176,69,1) 100%);
+}
